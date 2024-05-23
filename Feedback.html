@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros - Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container1 {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .feedbackMessage {
+            height: 120px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 15px;
+        }
+
+        .navbar-nav .nav-item .form-control {
+            width: 150px;
+        }
+
+        .navbar-nav .nav-item .btn {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Warner-Brothers-Logo-700x394.png" alt="Logo" height="45">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Movies.html">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tv-shows.html">Tv Show</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gamesand-Apps.html">Games And Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Collections.html">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Feedback.html">Feedback</a>
+                        </li>
+                        <!-- Search bar -->
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                            </form>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container1">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm" action="#" method="POST">
+            <div class="form-group">
+                <label for="feedbackName">Your Name:</label>
+                <input type="text" id="feedbackName" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="feedbackEmail">Your Email:</label>
+                <input type="text" id="feedbackEmail" name="email" required>
+                <div id="emailFeedback" class="feedback"></div>
+            </div>
+            <div class="form-group">
+                <label for="feedbackMessage">Your Message:</label>
+                <textarea id="feedbackMessage" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submit" value="Submit">
+            </div>
+            <div id="response"></div>
+
+        </form>
+    </div>
+    <footer id="footer" class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="footer-social-icons">
+                <a href="https://www.facebook.com/warnerbrosent/" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/WBHomeEnt" class="text-light"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/warnerbrosentertainment/" class="text-light"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+$(document).ready(function() {
+    // Real-time input validation and styling
+    $('#feedbackName, #feedbackEmail, #feedbackMessage').on('input', function() {
+        var input = $(this);
+        var value = input.val().trim();
+        
+        // Update input border color based on whether there is data
+        if (value !== '') {
+            input.css('border-color', '#28a745'); // Green color for non-empty input
+        } else {
+            input.css('border-color', ''); // Default border color if input is empty
+        }
+    });
+
+    // Real-time email validation
+    $('#feedbackEmail').on('input', function() {
+        var email = $(this).val().trim();
+        var emailFeedback = $('#emailFeedback');
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (email === '') {
+            emailFeedback.html('');
+            $(this).css('border-color', ''); // Reset border color if email is empty
+        } else if (!emailPattern.test(email)) {
+            emailFeedback.html('Invalid email address.');
+            emailFeedback.css('color', 'red');
+            $(this).css('border-color', 'red'); // Red border for invalid email
+        } else {
+            emailFeedback.html('Email is valid.');
+            emailFeedback.css('color', 'green');
+            $(this).css('border-color', '#28a745'); // Green border for valid email
+        }
+    });
+
+    // Handle form submission
+    $('#feedbackForm').on('submit', function(event) {
+        event.preventDefault();
+
+        var name = $('#feedbackName').val().trim();
+        var email = $('#feedbackEmail').val().trim();
+        var message = $('#feedbackMessage').val().trim();
+        var responseDiv = $('#response');
+
+        if (name === '' || email === '' || message === '') {
+            responseDiv.html('All fields are required.');
+            responseDiv.css('color', 'red');
+            return;
+        }
+
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(email)) {
+            responseDiv.html('Invalid email address.');
+            responseDiv.css('color', 'red');
+            return;
+        }
+
+        // Simulate a successful submission (you can replace this with actual server-side code)
+        responseDiv.html('Feedback submitted successfully!');
+        responseDiv.css('color', 'green');
+
+        // Reload the page after 2 seconds
+        setTimeout(function() {
+            location.reload();
+        }, 2000);
+    });
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+.nav-link:hover {
+    color: #4837ff;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: #b0b0b0;
+}
+.navbar #navbarNav .active {
+
+
+color: #4837ff;
+
+}
+.carousel-inner {
+    margin-top: 15px;
+    transition: 0.2s ease;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card {
+    border-color: #000;
+}
+
+.text {
+    color: black;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;   
+}
+  
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.footer-social-icons a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+.movie-list {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .movie-list {
+        margin-top: 20px;
+    }
+    .carouselslides {
+        display: none;
+    }
+} 
+
